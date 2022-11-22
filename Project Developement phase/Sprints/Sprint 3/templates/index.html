@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<style >
+input[type=text], select {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 50%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+</style>
+<head>
+<title>Predication of Flight Delay</title>
+</head>
+<body style="background-image:url('ibm.jpg');background-repeat:no-repeat;background-size:100% 100%">
+
+<h1><b><center> Predication of Flight Delay</center></b></h1>
+<form action ="http://localhost:5000/predicition" method="POST">
+  <label for="fname"><b>Enter The Flight Number:</b></label>
+  <input type="text" id="name" name="name"><br><br>
+
+  <label for="lname"><b>Month:</b></label>
+  <input type="text" id="month" name="month"><br><br>
+
+   <label for="fname"><b>Day Of Month:</b></label>
+  <input type="text" id="dayofmonth" name="dayofmonth"><br><br>
+
+  <label for="lname"><b>Day Of Week</b></label>
+  <input type="text" id="dayofweek" name="dayofweek"><br><br>
+
+   <label for="fname"><b>Origin:</b></label>
+  <input type="text" id="origin" name="origin"><br><br>
+
+  <label for="lname"><b>Destination:</b></label>
+  <input type="text" id="destination" name="destination"><br><br>
+
+ <label for="fname"><b>Scheduled Departure Time:</b></label>
+  <input type="text" id="dept" name="dept"><br><br>
+
+  <label for="lname"><b>Scheduled Arrival Time:</b></label>
+  <input type="text" id="arrtime" name="arrtime"><br><br>
+
+ <label for="fname"><b>Actual Departure Time:</b></label>
+  <input type="text" id="actdept" name="actdept"><br><br><br>
+
+   <input type="submit" value="Submit">
+   
+
+    
+  
+
+</form>
+
+</body>
+</html>
